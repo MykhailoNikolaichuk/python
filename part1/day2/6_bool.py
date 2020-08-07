@@ -1,0 +1,71 @@
+"""
+Integers:
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+"""
+# x = 1
+# y = 399999999999999999999999999999999999999999999999999999999999999999999999999999999999939999999999999999999999999999999999999999999999999999999999999999999999999999999999993999999999999999999999999999999999999999999999999999999999999999999999999999999999999399999999999999999999999999999999999999999999999999999999999999999999999999999999999939999999999999999999999999999999999999999999999999999999999999999999999999999999999993999999999999999999999999999999999999999999999999999999999999999999999999999999999999399999999999999999999999999999999999999999999999999999999999999999999999999999999999939999999999999999999999999999999999999999999999999999999999999999999999999999999999993999999999999999999999999999999999999999999999999999999999999999910000000000000
+# z = -3255522
+
+# print(type(x))
+# print(type(y))
+# print(type(z))
+# print(y - z)
+
+"""
+Float
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+"""
+# x = 1.10
+# y = 1.0
+# z = -35.59
+
+# print(type(x))
+# print(type(y))
+# print(type(z))
+
+"""
+Complex
+"""
+
+# x = 3+5j
+# y = 5j
+# z = -5j
+
+# print(type(x))
+# print(type(y))
+# print(type(z))
+
+"""
+Type Conversion
+You can convert from one type to another with the int(), float(), and complex() methods:
+"""
+
+z = 1j   # complex
+
+
+x = 1    # int
+# convert from int to float:
+a = float(x)
+print(a)
+print(type(a))
+
+y = 2.8  # float
+# convert from float to int:
+b = int(y)
+print(b)
+print(type(b))
+
+# convert from int to complex:
+c = complex(x)
+print(c)
+print(type(c))
+
+
+
+import random
+
+print(random.randrange(1, 10))
+
+
+
+
