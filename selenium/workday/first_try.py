@@ -76,26 +76,18 @@ WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/bod
 
 #click on OTT
 time.sleep(1)
-# WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[9]/div[1]/div/div[2]/div/div[1]/div/div/div[8]/div/div"))).click()
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[9]/div[1]/div/div[2]/div/div[1]/div/div/div[8]/div/div/div[2]"))).click()
 
-#                                           /html/body/div[6]/div[1]/div[1]/section/div[1]/div/div/div[1]/div/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div/div[2]/div/div/table/tbody/tr[1]/td[6]/div/div/input
-# monday_tf = driver.find_element_by_xpath('/html/body/div[6]/div[1]/div[1]/section/div[1]/div/div/div[1]/div/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div/div[2]/div/div/table/tbody/tr[1]/td[5]/div/div/input')
-# monday_tf.clear()
-# monday_tf.send_keys('8')
-
+#textfields with hours monday - friday
 for index in range (5, 10):
     cell_with_hours = driver.find_element_by_xpath(f'/html/body/div[6]/div[1]/div[1]/section/div[1]/div/div/div[1]/div/div/div/div/div/div[4]/div[1]/div/div[1]/div[2]/div/div[2]/div/div/table/tbody/tr[1]/td[{index}]/div/div/input')
     cell_with_hours.clear()
     cell_with_hours.send_keys('8')
 
+#ok button
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[6]/div[1]/div[1]/section/div[2]/div[1]/div[1]/button[1]"))).click()
 
 
-# time_by_type = driver.find_element_by_link_text('Enter Time by Type')
-# time_by_type.click()
 
-
-
-# time.sleep(3) 
-# driver.quit()
+time.sleep(60) 
+driver.quit()
