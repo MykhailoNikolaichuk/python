@@ -9,3 +9,24 @@
 # /bookstore/book[last()-1] Selects the last but one book element that is the child of the bookstore element
 
 # //book/title | //book/price	Selects all the title AND price elements of all book elements
+
+
+'''
+++link: Features
+1. //a[text()='Features']
+2. //a[contains(text(),'Features')] --recommended
+
+++button:
+//button[@type='button' and @class='btn']
+//button[contains(text(),'Sign Up')]
+//div[@class='dropdown']//button[@type='button' and @class='btn btn-secondary dropdown-toggle' and @id='dropdownMenuButton']
+//button[@id='dropdownMenuButton']
+
+++preceding-sibling:
+//a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input
+
+++parent & preceding-sibling:
+
+//a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
+
+'''
